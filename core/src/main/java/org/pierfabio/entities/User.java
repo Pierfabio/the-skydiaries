@@ -1,15 +1,16 @@
 package org.pierfabio.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import org.springframework.data.annotation.Id;
 
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class User {
+
 
     @Id
     private String id;
@@ -29,4 +30,4 @@ public class User {
         FEMALE
     }
 
-}
+    }
