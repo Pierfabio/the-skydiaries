@@ -9,8 +9,13 @@ Docker
 ```
 ## Product Backlog
 ```python
-Modules Hierarchy
-Connectivity to Database
-Back-End key-features
+Data Insert
+Data Visualization
+User Authenticathion
+```
+## Features
+```python
+Back-end stack
+Database simple schema
 UI 
 ```
