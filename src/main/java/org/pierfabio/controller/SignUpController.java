@@ -1,4 +1,4 @@
-package org.pierfabio.controllers;
+package org.pierfabio.controller;
 
 
 import org.pierfabio.entities.User;

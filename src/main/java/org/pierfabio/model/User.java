@@ -1,8 +1,8 @@
-package org.pierfabio.entities;
+package org.pierfabio.model;
 
 import lombok.*;
-
 import org.springframework.data.annotation.Id;
+
 
 @Getter
 @Setter
@@ -30,4 +30,4 @@ public class User {
         FEMALE
     }
 
-    }
+}
