@@ -18,4 +18,6 @@ public class UserService {
     public User insertUser(User user){
         return userInterface.insert(user);
     }
+
+    public User findByFirstName(String firstName) { return userInterface.findByFirstName(firstName); }
 }
