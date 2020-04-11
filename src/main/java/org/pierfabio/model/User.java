@@ -2,6 +2,7 @@ package org.pierfabio.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Getter
@@ -9,6 +10,7 @@ import org.springframework.data.annotation.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Document("users")
 public class User {
 
 
