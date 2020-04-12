@@ -1,6 +1,6 @@
-package org.pierfabio.repository;
+package org.pierfabio.skydiaries.repository;
 
-import org.pierfabio.model.User;
+import org.pierfabio.skydiaries.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,15 +1,17 @@
-package org.pierfabio.model;
+package org.pierfabio.skydiaries.model;
 
-import lombok.*;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
+@Builder
 @Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Document("users")
 public class User {
 

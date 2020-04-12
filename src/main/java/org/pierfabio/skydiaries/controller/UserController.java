@@ -1,9 +1,10 @@
-package org.pierfabio.controller;
+package org.pierfabio.skydiaries.controller;
 
 
 
-import org.pierfabio.model.User;
-import org.pierfabio.repository.UserRepository;
+
+import org.pierfabio.skydiaries.model.User;
+import org.pierfabio.skydiaries.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
