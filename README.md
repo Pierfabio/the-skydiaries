@@ -2,7 +2,7 @@
 ## Project Structure
 ```python
 ReactJs 
-Spring 'MVC' & 'Boot'
+Spring Boot
 MongoDB
 Firebase
 Docker
