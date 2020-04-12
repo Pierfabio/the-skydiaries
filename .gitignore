@@ -27,3 +27,7 @@
 .idea/misc.xml
 .idea/workspace.xml
 *.iml
+*.class
+*.original
+*.lst
+.idea/.name
