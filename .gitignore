@@ -1,28 +1,31 @@
-*.DS_Store
-Thumbs.db
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
-# Build Files #
-
-bin
-target
-build/
-.gradle
-
-# Eclipse Project Files #
-
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
 .settings
+.springBeans
+.sts4-cache
 
-# IntelliJ IDEA Files #
-
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-*.idea
 
-# Test files
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
 
-accessingdataneo4j.db
-dependency-reduced-pom.xml
-README.html
+### VS Code ###
+.vscode/
