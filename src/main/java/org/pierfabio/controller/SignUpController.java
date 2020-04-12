@@ -1,8 +1,9 @@
 package org.pierfabio.controller;
 
 
-import org.pierfabio.entities.User;
-import org.pierfabio.services.UserService;
+
+import org.pierfabio.model.User;
+import org.pierfabio.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,11 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class SignUpController {
 
     @Autowired
-    UserService userService;
+    UserRepository userRepository;
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody @Validated User user) throws Exception{
-        User created = userService.insertUser(user);
-        return new ResponseEntity<>(new User(), HttpStatus.CREATED);
+        User created = userRepository.save(user);
+        return new ResponseEntity<User>(created, HttpStatus.CREATED);
     }
 }
