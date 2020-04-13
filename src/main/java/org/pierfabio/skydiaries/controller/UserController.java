@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -22,6 +24,12 @@ public class UserController {
     public ResponseEntity<User> findUser(String firstName) throws Exception{
         User result = userRepository.findByFirstName(firstName);
         return new ResponseEntity<User>(result, HttpStatus.OK);
+    }
+
+    @GetMapping("/{userId}")
+    public ResponseEntity<Optional<User>> find(@PathVariable("userId") String userId) {
+        Optional<User> result = userRepository.findById(userId);
+        return new ResponseEntity<Optional<User>>(result, HttpStatus.OK);
     }
 
     @PostMapping
