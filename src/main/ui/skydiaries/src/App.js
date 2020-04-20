@@ -5,12 +5,14 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NoMatch } from './pages/NoMatch';
 import { Layout } from './components/Layout';
-import { NavigationBar } from './components/NavigationBar'
+import { NavigationBar } from './components/NavigationBar';
+import { Jumbotron } from './components/Jumbotron';
 
 function App() {
   return (
    <React.Fragment>
      <NavigationBar/>
+     <Jumbotron/>
       <Layout>
         <Router>
             <Switch>
