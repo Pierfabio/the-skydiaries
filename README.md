@@ -11,7 +11,7 @@ Docker
 ```python
 Data Insert
 Data Visualization
-User Authenticathion
+User Authentication
 ```
 ## Features
 ```python
