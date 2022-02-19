@@ -12,9 +12,9 @@ export const Home = () => (
  
             <Container>
                 <Row>
-                    <Col>1 of 3</Col>
-                    <Col md={4}><Image src={require('../assets/wing-plane.jpg')} rounded /></Col>
-                    <Col>2 of 3</Col>
+                    <Col md={2}>1 of 3</Col>
+                    <Col md={8}><Image src={require('../assets/airplane-wing.jpg')} rounded /></Col>
+                    <Col md={2}>3 of 3</Col>
                 </Row>
             </Container>
    
